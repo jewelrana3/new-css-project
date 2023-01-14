@@ -1,0 +1,168 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sevillana&display=swap');
+
+
+
+/* utilites style start */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #9F9F9F;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    width: 870px;
+    padding: 30px;
+    margin-bottom: 21px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+}
+
+/* top-players styles start*/
+.top-players {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #562EFF;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.h2-name {
+    margin-left: 16px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* top blogs styles */
+.blogs {
+    margin-top: 31px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog .thamnail img {
+    width: 224px;
+    height: 127px;
+}
+
+.blog-title {
+    margin-left: 16px;
+}
+
+.my-ui {
+    color: #000000;
+    font-size: 20px;
+}
+
+.by-danny {
+    margin-top: 6px;
+    color: #562EFF;
+    font-size: 16px;
+}
+
+/* laset top styles */
+.course {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+    padding: 70px 17px;
+}
+.courses{
+    
+}
+.course-title{
+    padding: ;
+}
+
+.course-banner img {
+    width: 266px;
+    height: 141px;
+    padding: 2px 3px;
+}
+.course-title-h3{
+    font-size: 20px;
+    line-height: 23px;
+    margin-top: 19px;
+}
+
+.filed{
+   color: #FFC014;
+}
+.emty{
+    color: #AEAEAE;
+opacity: 0.25;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* media query */
+
+/* mobile device */
+@media screen and (max-width:688px){
+    .container{
+        width:100%;
+    }
+    .players{
+        align-items: center;  
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player,.blog{
+        flex-direction: column;
+    }
+    main{
+        display:block;
+    }
+    .blogs, .course{
+        grid-template-columns: repeat(1,1fr);
+         
+
+    }
+    .course{
+
+    }
+}
+@media screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+}
